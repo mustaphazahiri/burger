@@ -1,0 +1,228 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    
+}
+h1{
+    font-size: 270%;
+}
+.cover {
+    background-image: url('../img/Cover.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px black;
+    height: 50vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Button1 {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+.btn{
+    margin: 1%;
+}
+.cover-description{
+    font-size: 130%;
+}
+.section2{
+    height: 45vh;
+    display: flex;
+    align-items: center;
+}
+#icon{
+margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+}
+.troiscube{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 2% auto;
+    font-size: 100%;
+    
+}
+.troiscube h2{
+    font-size: 90%;
+    
+    
+}
+.textcube{
+    font-size: 90%;
+}
+.cube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 18vw;
+    height: 28vh;
+    text-align: center;
+    border-radius: 3px;
+    border: 0.5px solid rgba(94, 94, 94, 0.459);
+    box-shadow: 2px 5px 10px rgba(148, 148, 148, 0.623);
+    display:inline-block;
+    border: 1;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);  
+}
+
+.cube:hover {
+    box-shadow: 2px 5px 10px rgba(148, 148, 148, 0.623);
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.15);
+}
+
+.section3{
+    background-color: black;
+    height: 80vh;
+
+}
+.categorie{
+    color: white;
+    font-size: 130%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   
+}
+.titre-cat{
+    margin: 1%;
+}
+.rectangles{
+    width: 80vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    margin-inline: auto;
+
+}
+.rectangle{
+    background-color: white;
+    width: 25vw;
+    height: 15vh;
+    
+}
+.choix{
+    background-color: white;
+    width: 25vw;
+    height: 15vh;
+}
+
+
+h5{
+    font-size: 100%;
+
+}
+
+p{
+    font-size: 90%;
+    margin-bottom: 3%;
+}
+.btn_burger{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.section4 {
+    height: 80vh;
+    margin: 5%;
+    
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+
+}
+.map{
+    
+}
+.hrcontact{
+    width: 50vh;
+}
+
+
+.menupage2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cube-div{
+    width: 70%;
+    margin: 2% auto;
+    font-size: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-inline: auto;
+    row-gap: 5%;
+    column-gap: 5%;
+    
+}
+.cube-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 18vw;
+    height: 28vh;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.5px solid rgba(94, 94, 94, 0.459);
+    box-shadow: 2px 5px 10px rgba(148, 148, 148, 0.623);
+    
+}
+.existedeja{
+    border: 2px solid red;
+}
