@@ -12,7 +12,7 @@ function insertbdd($nom_client, $prenom_client, $adresse_client, $ville_client, 
         foreach ($bddarray as $value) {
             if ($value["email_client"] == $email_client) {
                 $dejaclient = true;
-                echo  "<p class=existedeja > un compte existe déjà avec cet email</p>";
+                echo  '<p class="alert alert-danger" > un compte existe déjà avec cet email</p>';
                 echo '<a class="dropdown-item" href="../traitement/login.php">Déjà client? Connectez-vous ici</a>';
                 break;
             }
@@ -32,9 +32,9 @@ function insertbdd($nom_client, $prenom_client, $adresse_client, $ville_client, 
                 }
             }
             if ($existe == true) {
-                echo "<p class=insertionok>Votre ville a été trouvée</p>";
+                echo '<p class="alert alert-success">Votre ville a été trouvée</p>';
             } else {
-                echo  "<p class=existedeja >" . ucfirst($ID_ville) . ", cette ville n'existe pas en France</p>";
+                echo  '<p class="alert alert-danger" >' . ucfirst($ID_ville) . ", cette ville n'existe pas en France</p>";
             }
         }
         if (isset($_POST['nom_client'])) {
@@ -110,15 +110,15 @@ function setNewUser($bdd, $array)
             $insert->bindValue(':ville_id', $ID_ville, PDO::PARAM_INT);
 
             if ($insert->execute()) {
-                return '<span class="text-success">Inscription reussie</span>';
+                return '<span class="alert alert-success">Inscription reussie</span>';
             } else {
-                return '<span class="text-danger">Erreur lors de l\'inscription</span>';
+                return '<span class="alert alert-danger">Erreur lors de l\'inscription</span>';
             }
         } else {
-            return '<span class="text-danger">La ville saisie n\'est pas connue</span>';
+            return '<span class="alert alert-danger">La ville saisie n\'est pas connue</span>';
         }
     } else {
-        return '<span class="existedeja text-danger">Cette Email existe déjà</span>';
+        return '<span class="alert alert-danger ">Cette Email existe déjà</span>';
     }
 }
 
@@ -161,6 +161,7 @@ function modifydataclient($ID, $bdd)
     $query->execute();
 }
 
+/*
 function ajoutImage($ID, $bdd)
 {
     if (isset($_POST['nom_produit'])) {
@@ -184,9 +185,4 @@ function ajoutImage($ID, $bdd)
             // echo $e->getMessage();
         }
     }
-}
-// ajout categorie
-// INSERT INTO `categorie` (`id_categorie`, `nom_categorie`, `id_image`) VALUES (NULL, 'boissons', '1');
-function ajoutProduit($ID, $bdd)
-{
-}
+}*/

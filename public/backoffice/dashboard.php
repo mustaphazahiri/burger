@@ -55,11 +55,77 @@ session_start();
                                     $admin = true;
                                 }
                                 if ($admin == true) { ?>
-                            <li class="navbar-brand"><a aria-current="page" target=_blanc href="gestionclients.php">Gestion des clients</a></li>
-                            <li class="navbar-brand"><a aria-current="page" target=_blanc href="totalventes.php">Tableau des ventes</a></li>
-                            <li class="navbar-brand"><a aria-current="page" target=_blanc href="insertingredient.php">Ajouter des ingredients</a></li>
-                            <li class="navbar-brand"><a aria-current="page" target=_blanc href="insertproduit.php">Ajouter des produits</a></li>
-                            <li class="navbar-brand"><a aria-current="page" target=_blanc href="insertcategorie.php">Ajouter des catégories</a></li>
+                            <!-- Gestion des clients -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gestion des clients
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" target=_blanc href="signup.php">Ajouter des clients</a></li>
+                                    <li><a class="dropdown-item" target=_blanc href="modifyclient.php">Modifier des clients</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target=_blanc href="deleteclient.php">Supprimer des clients</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Tableau des ventes -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tableau des ventes
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" target=_blanc href="topventes.php">Top des ventes</a></li>
+                                    <li><a class="dropdown-item" target=_blanc href="flopventes.php">Flop des ventes</a></li>
+
+                                </ul>
+                            </li>
+                            <!-- Gestion des ingredients -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gestion des ingrédients
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" target=_blanc href="insertingredient.php">Ajouter des ingrédients</a></li>
+                                    <li><a class="dropdown-item" target=_blanc href="modifyingrediet.php">Modifier des ingrédients</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target=_blanc href="deleteingredient.php">Supprimer des ingrédients</a></li>
+                                </ul>
+                            </li>
+                            <!-- Gestion des produits -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gestion des produits
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" target=_blanc href="insertproduit.php">Ajouter des produits</a></li>
+                                    <li><a class="dropdown-item" target=_blanc href="modifyproduit.php">Modifier des produits</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target=_blanc href="deleteproduit.php">Supprimer des produits</a></li>
+                                </ul>
+                            </li>
+                            <!-- Gestion des catégories -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gestion des catégories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" target=_blanc href="insertcategorie.php">Ajouter des catégories</a></li>
+                                    <li><a class="dropdown-item" target=_blanc href="modifycategorie.php">Modifier des catégories</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" target=_blanc href="deletecategorie.php">Supprimer des catégories</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a href="/burger/controller/deconnexionController.php" class="nav-link">Déconnexion</a></li>
                         <?php } ?>
 

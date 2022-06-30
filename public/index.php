@@ -71,12 +71,12 @@ if ($connected == false) { ?>
             </div>
         </nav>
     </header>
-    <h2>Bonjour <?php $authenification = false;
-                if (isset($_SESSION['user']['prenom_client'])) {
-                    $authenification = true;
-                    echo $_SESSION['user']['prenom_client'] . "!";
-                    // var_dump($_SESSION['user']['prenom_client']);
-                } ?></h2>
+    <h2 class="py-4">Bonjour <?php $authenification = false;
+                                if (isset($_SESSION['user']['prenom_client'])) {
+                                    $authenification = true;
+                                    echo $_SESSION['user']['prenom_client'] . "!";
+                                    // var_dump($_SESSION['user']['prenom_client']);
+                                } ?></h2>
 
 
     <?php
@@ -104,7 +104,7 @@ if ($connected == false) { ?>
     ?>
 
 
-    <section class="section4">
+    <section class=" section4">
         <div class="container">
             <div class="gauche">
                 <h2>Notre Restaurant</h2>

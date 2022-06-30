@@ -21,6 +21,6 @@ function signUp($bdd, $array)
             return $return;
         }
     } else {
-        return '<span>Merci de remplir tout les champs</span>';
+        return '<span class="alert alert-danger">Merci de remplir tout les champs</span>';
     }
 }

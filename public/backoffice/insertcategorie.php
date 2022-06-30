@@ -1,5 +1,12 @@
+<?php
+include('utilFunction.php');
+include('../models/function.php');
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
+<img src="" alt="">
 
 <head>
     <meta charset="UTF-8">
@@ -13,8 +20,9 @@
 <body>
     <section class="d-flex justify-content-center">
         <div class="card " style="width: 20rem;">
-            <!-- Logo Image -->
-            <img src="../public/img/BURGER_COMPANY_Logoriginal.svg" width="200" alt="" class="d-inline-block align-middle mr-2">
+            <img src="" alt="">
+            <!-- Logo Image../public/img/BURGER_COMPANY_Logoriginal.svg -->
+            <img src="../img/BURGER_COMPANY_Logoriginal.svg" width="200" alt="" class="d-inline-block align-middle mr-2">
             <!-- Logo Text -->
             <h2 class="text-uppercase py-4">Ajouter des catégories</h2>
             <form method="POST" action="" enctype="multipart/form-data">
@@ -22,7 +30,7 @@
                     <label>Nom : </label>
                     <input type="text" class="form-control" name="nom_categorie" placeholder="Nom de la catégorie" required />
                 </div>
-                <input type="submit" class="btn btn-primary" value="Valider" />
+                <input type="submit" class="btn btn-primary " value="Inserer" />
             </form>
         </div>
     </section>

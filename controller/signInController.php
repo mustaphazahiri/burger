@@ -22,10 +22,10 @@ function connexionUser($bdd, $mail, $mdp)
             unset($_SESSION['user']['pwd_client']);
             header('Location: index.php');
         } else {
-            return "<p class=existedeja>Identifiants ou mot de passe invalides</p>";
+            return '<p class="alert alert-danger">Identifiants ou mot de passe invalides</p>';
         }
     } else {
-        return "<p class=existedeja>Identifiants invalides</p>";
+        return '<p class="alert alert-danger">Identifiants invalides</p>';
     }
     // var_dump($_SESSION);
 }
